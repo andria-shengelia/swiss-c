@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 
 void menu();
 void exec_task(int arg);
@@ -24,6 +25,7 @@ void clear(){
 }
 
 int main(){
+  srand(time(NULL));
   menu();
 }
 
@@ -141,11 +143,31 @@ void temperature(){
     for(int i=0;i<5;i++){
       printf("\n");
     }
-    printf("Answer: %g°F ");
+    printf("Answer: %g°F \n",answer);
+    for(int i=0;i<5;i++){
+      printf("\n");
+    }
 
   }
   else if(arg==2){
-
+    for(int i=0;i<5;i++){
+    printf("\n");
+    }
+    printf("°F: ");
+    scanf("%f",&t);
+    printf("\n");
+    for(int i=0;i<5;i++){
+    printf("\n");
+    }
+    answer=(t-32)/1.8;
+    clear();
+    for(int i=0;i<5;i++){
+      printf("\n");
+    }
+    printf("Answer: %g°C \n",answer);
+    for(int i=0;i<5;i++){
+      printf("\n");
+    }
   }
   else{
     clear();
