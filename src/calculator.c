@@ -3,6 +3,7 @@
 void calculator(){
   float num1,num2,answer;
   char calc_arg;
+  char log[100];
   for(int i=0;i<5;i++){
     printf("\n");
   }
@@ -41,6 +42,8 @@ void calculator(){
   }
   
   printf("Answer: %g\n",answer);
+  snprintf(log,sizeof(log),"%g%c%g=%g",num1,calc_arg,num2,answer);
+  history_append(log);
   done_menu();
   
 }

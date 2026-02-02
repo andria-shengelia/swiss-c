@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <time.h>
+#include <string.h>
 
 void clear();
 void calculator();
@@ -11,3 +12,6 @@ void temperature();
 void random_num();
 void counter();
 void done_menu();
+void history_append(char log[]);
+void history_display();
+void history_clear();

@@ -19,6 +19,12 @@ void exec_task(int arg){
       counter();
     break;
     case 5:
+      history_display();
+    break;
+    case 6:
+      history_clear();
+    break;
+    case 7:
       printf("Thanks for using me see you soon :)\n");
     break;
     default:
