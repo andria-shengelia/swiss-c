@@ -2,9 +2,6 @@
 
 Simple command-line C utility providing four small tools: a calculator, a temperature converter, a random number generator, and an integer counter.
 
-**Contents**
-- **Source:** [main.c](main.c)
-- **Binary:** [bin/main](bin/main) (if you compiled it)
 
 **Features**
 - **Calculator:** basic arithmetic (+, -, *, /, %) for two floating-point numbers.
@@ -22,14 +19,18 @@ git clone https://github.com/andria-shengelia/swiss-c.git
 - Or use github ZIP file and extract it.
 
 **Build**
-- **Prerequisite:** a C compiler such as `gcc`.
+- **Prerequisite:** a C compiler such as `gcc`, `make`
 - **Compile:**
 
 
 ```bash
-gcc main.c -o bin/main && bin/main
+make
 ```
+-**Compile and run:**
 
+```bash
+make run
+```
 
 Follow the on-screen menu to pick a tool.
 
@@ -39,7 +40,6 @@ Follow the on-screen menu to pick a tool.
 
 **Coming Improvements**
 - Add input validation to handle non-numeric input and divide-by-zero cases.
-- Add a `Makefile` for easier build: `make build`, `make run`, `make clean`.
 - Add history to calculator and other tools.
 
 **Where to look in the code**
@@ -53,6 +53,18 @@ Follow the on-screen menu to pick a tool.
 - Contact me or request pull. :)
 
 
+## Last update.
+
+
+**Modular programming**
+
+- Changed project structure to more modular approach
+- Better for future and easier for contribution
+
+**Makerfile**
+
+- Added makefile which makes compiling and running easier
+- Adds to prevoiusly mentioned modular approach
 
 
 
