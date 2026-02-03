@@ -40,7 +40,6 @@ Follow the on-screen menu to pick a tool.
 
 **Coming Improvements**
 - Add input validation to handle non-numeric input and divide-by-zero cases.
-- Add history to calculator and other tools.
 
 **Where to look in the code**
 - Main entry and menu logic: [main.c](main.c)
@@ -55,19 +54,10 @@ Follow the on-screen menu to pick a tool.
 
 ## Last update.
 
+**History**
 
-**Modular programming**
-
-- Changed project structure to more modular approach
-- Better for future and easier for contribution
-
-**Makerfile**
-
-- Added makefile which makes compiling and running easier
-- Adds to prevoiusly mentioned modular approach
-
-
-
+- Added history which can be accessed with main menu.
+- History is stored on log.txt file in log directory
 
 
 
